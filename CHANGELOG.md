@@ -16,7 +16,7 @@ All notable changes to this project are documented in this file.
    * `script` property is now writable
    * `ip` property is now writable
    * Expose `calling_script` property
-   * Fix `load_script()` not returning a property reference
+   * Fix `load_script()` not returning a proper reference
 * `IntegerStackItem` class now supports creation from a Python `int`
 * `StackItem` class now exposes `deep_copy()` function
 * `PrimitiveType` class now supports `len()`
