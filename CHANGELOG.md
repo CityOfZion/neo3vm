@@ -1,6 +1,13 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.4.1] 2020-12-07
+**Python binding updates**
+* Expose missing OpCode `DIV`
+
+### C++ changes
+* Add more details to exception messages to help debugging without source 
+
 ## [0.4] 2020-10-15
 **Python binding updates**
 * `ExecutionEngine` changes
