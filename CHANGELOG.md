@@ -1,9 +1,13 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.5] 2020-02-18
+### C++ changes
+* Update internals to match [preview5](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-preview5)
+
 ## [0.4.3] 2020-12-15
 **Python binding updates**
-* Expose partial native `ApplicationEngine`. 
+* Expose partial native `ApplicationEngine`
 
 ### C++ changes
 * Add partial native `ApplicationEngine`. Profiling showed that the `pre_execute_instruction()` was found to be very expensive while it works with mostly static data. Moving it to C++ avoids bridging between C++ and Python for every instruction executed.
@@ -12,7 +16,7 @@ All notable changes to this project are documented in this file.
 ### C++ changes
 * Add OpCode `DIV` implementation
 * Fix OpCode `REVERSE` not taking `count` into account
-* Fix `ExecutionContext.static_field` cloning not working as intended.
+* Fix `ExecutionContext.static_field` cloning not working as intended
 
 ## [0.4.1] 2020-12-07
 **Python binding updates**
