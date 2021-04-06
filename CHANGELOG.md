@@ -1,6 +1,16 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.5.1] 2020-04-06
+### Python binding updates
+- Expose ``load_token()`` overload on ``ApplicationEngineCpp``
+
+### C++ changes
+* Update ``ExecutionContext::clone()`` to include scripthash bytes
+* Add missing ``break`` statement for ``OpCode::CALLT`` implementation causing extra contexts being loaded
+* Fix strict mode for preview 5 block 2721
+* Fix reference counter for circular types
+
 ## [0.5] 2020-02-18
 ### C++ changes
 * Update internals to match [preview5](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-preview5)
