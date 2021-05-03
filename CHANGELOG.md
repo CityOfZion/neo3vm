@@ -1,6 +1,12 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.7] 2020-05-03
+* Update internals to match [rc2](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-rc2)
+
+## [0.6] 2020-04-30
+* Update internals to match [rc1](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-rc1)
+
 ## [0.5.1] 2020-04-06
 ### Python binding updates
 - Expose ``load_token()`` overload on ``ApplicationEngineCpp``
