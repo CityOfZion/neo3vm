@@ -1,6 +1,10 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.7.1] 2020-05-17
+### C++ changes
+* Add missing `POW` instruction to opcode price table for use by the `ApplicationEngine` class.
+
 ## [0.7] 2020-05-03
 * Update internals to match [rc2](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-rc2)
 
