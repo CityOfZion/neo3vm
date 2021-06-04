@@ -1,6 +1,15 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.8] 2020-06-04
+### Python binding updates
+* Expose `opcode_price()` getter on ``ApplicationEngine``
+* Drop Python 3.7 bindings
+
+### C++ changes
+* Fix pushing negative numbers with ``ScriptBuilder`` ([ref](https://github.com/neo-project/neo-vm/pull/413))
+* Support pushing Python ``None`` type
+
 ## [0.7.1] 2020-05-17
 ### C++ changes
 * Add missing `POW` instruction to opcode price table for use by the `ApplicationEngine` class.
