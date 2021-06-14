@@ -1,6 +1,10 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.8.1] 2020-06-14
+### C++ changes
+* Fix reference counter edge case for nested struct stack not decreasing reference count.  
+
 ## [0.8] 2020-06-04
 ### Python binding updates
 * Expose `opcode_price()` getter on ``ApplicationEngine``
