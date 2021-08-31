@@ -13,7 +13,7 @@ jobs:
   deploy-pypi:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1.2
+      - uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install setuptools wheel twine
       - name: Download wheels
-          - uses: robinraju/release-downloader@main
+        uses: robinraju/release-downloader@v1.2
         with:
           repository: "CityOfZion/neo3vm"
           # Latest does not work on pre-release versions, it will error with a 404.
