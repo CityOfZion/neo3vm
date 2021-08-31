@@ -1,6 +1,19 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.8.3] 2020-08-02
+### C++ changes
+* Fix `MapStackItem` to remember insertion order
+
+## [0.8.2] 2020-08-02
+Following the C# side
+### C++ changes
+* Limit `POW` exponent ([ref](https://github.com/neo-project/neo-vm/pull/422)) 
+* Fix `SQRT` ([ref](https://github.com/neo-project/neo-vm/pull/427))
+* Limit `StructStackItem` clone and equality depths ([ref1](https://github.com/neo-project/neo-vm/pull/423), [ref2](https://github.com/neo-project/neo-vm/pull/428))
+* Reference counter optimization
+
+
 ## [0.8.1] 2020-06-14
 ### C++ changes
 * Fix reference counter edge case for nested struct stack not decreasing reference count.  
