@@ -1,6 +1,11 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.8.4] 2020-10-08
+### C++ changes
+* Allow certain exceptions to be caugth by smart contracts ([ref](https://github.com/neo-project/neo-vm/pull/436))
+
+
 ## [0.8.3] 2020-08-02
 ### C++ changes
 * Fix `MapStackItem` to remember insertion order
