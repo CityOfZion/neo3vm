@@ -4,7 +4,7 @@
 
 NEO3VM
 ------
-A C++ port of the NEO3 Blockchain `Virtual Machine <https://github.com/neo-project/neo-vm>`_ with bindings for Python 3.8.
+A C++ port of the NEO3 Blockchain `Virtual Machine <https://github.com/neo-project/neo-vm>`_ with bindings for Python 3.8 & 3.9.
 
 Installation
 ~~~~~~~~~~~~
