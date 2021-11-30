@@ -1,16 +1,19 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
-## [0.8.4] 2020-10-08
+## [0.8.5] 2021-11-30
+### C++ changes
+* Fix calling script hash not shared between `ExecutionContext`s in certain cases
+
+## [0.8.4] 2021-10-08
 ### C++ changes
 * Allow certain exceptions to be caugth by smart contracts ([ref](https://github.com/neo-project/neo-vm/pull/436))
 
-
-## [0.8.3] 2020-08-02
+## [0.8.3] 2021-08-23
 ### C++ changes
 * Fix `MapStackItem` to remember insertion order
 
-## [0.8.2] 2020-08-02
+## [0.8.2] 2021-08-02
 Following the C# side
 ### C++ changes
 * Limit `POW` exponent ([ref](https://github.com/neo-project/neo-vm/pull/422)) 
@@ -19,11 +22,11 @@ Following the C# side
 * Reference counter optimization
 
 
-## [0.8.1] 2020-06-14
+## [0.8.1] 2021-06-14
 ### C++ changes
 * Fix reference counter edge case for nested struct stack not decreasing reference count.  
 
-## [0.8] 2020-06-04
+## [0.8] 2021-06-04
 ### Python binding updates
 * Expose `opcode_price()` getter on ``ApplicationEngine``
 * Drop Python 3.7 bindings
@@ -32,17 +35,17 @@ Following the C# side
 * Fix pushing negative numbers with ``ScriptBuilder`` ([ref](https://github.com/neo-project/neo-vm/pull/413))
 * Support pushing Python ``None`` type
 
-## [0.7.1] 2020-05-17
+## [0.7.1] 2021-05-17
 ### C++ changes
 * Add missing `POW` instruction to opcode price table for use by the `ApplicationEngine` class.
 
-## [0.7] 2020-05-03
+## [0.7] 2021-05-03
 * Update internals to match [rc2](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-rc2)
 
-## [0.6] 2020-04-30
+## [0.6] 2021-04-30
 * Update internals to match [rc1](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-rc1)
 
-## [0.5.1] 2020-04-06
+## [0.5.1] 2021-04-06
 ### Python binding updates
 - Expose ``load_token()`` overload on ``ApplicationEngineCpp``
 
@@ -52,7 +55,7 @@ Following the C# side
 * Fix strict mode for preview 5 block 2721
 * Fix reference counter for circular types
 
-## [0.5] 2020-02-18
+## [0.5] 2021-02-18
 ### C++ changes
 * Update internals to match [preview5](https://github.com/neo-project/neo-vm/releases/tag/v3.0.0-preview5)
 
