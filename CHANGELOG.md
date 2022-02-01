@@ -1,6 +1,14 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.8.6] 2022-02-01
+### C++ changes
+* Add `load_script` function with additional argument to override the context scripthash bytes property to support correctly loading contracts on the mamba side.
+* Perform explicit casting of 2 values used in reference counting to prevent an incorrect relational expression result.
+
+### Python binding updates
+* Expose the additional `load_script` function
+
 ## [0.8.5] 2021-11-30
 ### C++ changes
 * Fix calling script hash not shared between `ExecutionContext`s in certain cases
