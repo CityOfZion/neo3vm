@@ -1,6 +1,14 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.9.0] 2022-05-17
+### C++ changes
+* Changed reference counter implementation. This results in compound stackitem derivatives no longer requiring a `ReferenceCounter` as argument in their constructors making them easier to use and less error prone. It also helped fixing a Python binding issue for OSX. 
+* Expose `move_next` on `ExecutionContext` making it easier to create a dissassembler.
+
+### Python binding updates
+* Removed `ReferenceCounter` argument from all compound stackitems.
+
 ## [0.8.6] 2022-02-01
 ### C++ changes
 * Add `load_script` function with additional argument to override the context scripthash bytes property to support correctly loading contracts on the mamba side.
