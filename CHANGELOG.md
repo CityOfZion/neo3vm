@@ -1,6 +1,17 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.10.0] 2022-06-28
+### C++ changes
+* Fix DDOS in max equal comparison ([ref](https://github.com/neo-project/neo-vm#454)).
+* Add MODMUL MODPOW opcodes ([ref](https://github.com/neo-project/neo-vm#455)).
+* Deep copy as immutable option ([ref](https://github.com/neo-project/neo-vm#473)).
+* Add `extra_data` field to `ExecutionContext` allowing to store arbitrary Python objects ([ref](https://github.com/neo-project/neo/pull/2734)).
+
+### Python binding updates
+* The `deep_copy` method on `StackItem`s now requires an argument to indicate if it should be copied as immutable (has special meaning inside the NEO core).
+* Expose `extra_data` field on `ExecutionContext`.
+
 ## [0.9.0] 2022-05-17
 ### C++ changes
 * Changed reference counter implementation. This results in compound stackitem derivatives no longer requiring a `ReferenceCounter` as argument in their constructors making them easier to use and less error prone. It also helped fixing a Python binding issue for OSX. 
