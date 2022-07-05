@@ -1,6 +1,13 @@
 ## Changelog
 All notable changes to this project are documented in this file.
 
+## [0.10.1] 2022-07-05
+### C++ changes
+* Add `push_on_return` and `snapshot` fields to `ExecutionContext` to support core fixes ([ref1](https://github.com/neo-project/neo/pull/2755),[ref2](https://github.com/neo-project/neo/pull/2729))
+
+### Python binding updates
+* Expose `push_on_return` and `snapshot` fields on `ExecutionContext`.
+
 ## [0.10.0] 2022-06-28
 ### C++ changes
 * Fix DDOS in max equal comparison ([ref](https://github.com/neo-project/neo-vm#454)).
